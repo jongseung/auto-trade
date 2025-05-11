@@ -1,0 +1,905 @@
+<!doctype html>
+<html class="no-js" lang="ko" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=1080">
+<meta name="apple-mobile-web-app-title" content="인포스탁데일리" />
+<!-- 메타태그정보 //-->
+<meta name="description" content="기업, 투자 정보, 정책분석 경제미디어. 증시뉴스, 기업동향, 정책, 기업 심층분석, 방송서비스 제공."/>
+<meta property="og:title" content="인포스탁데일리"/>
+<meta property="og:site_name" content="인포스탁데일리"/>
+<meta property="og:image" content="http://www.infostockdaily.co.kr/image/logo/snslogo_20190104125926.jpg" />
+<meta property="og:url"	content="http://www.infostockdaily.co.kr" />
+<meta property="og:description" content="기업, 투자 정보, 정책분석 경제미디어. 증시뉴스, 기업동향, 정책, 기업 심층분석, 방송서비스 제공." />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="인포스탁데일리"/>
+<meta name="twitter:description" content="기업, 투자 정보, 정책분석 경제미디어. 증시뉴스, 기업동향, 정책, 기업 심층분석, 방송서비스 제공."/>
+<meta name="twitter:image:src" content="http://www.infostockdaily.co.kr/image/logo/snslogo_20190104125926.jpg"/>
+<!--// 메타태그정보 -->
+<title>인포스탁데일리</title>
+<link rel="canonical"  href="http://www.infostockdaily.co.kr" />
+<link rel="stylesheet" href="/css/jquery-ui.min.css?ver=11">
+<link rel="stylesheet" href="/css/foundation.min.css?ver=11">
+<link rel="stylesheet" href="/css/custom.foundation.min.css?ver=11">
+<link rel="stylesheet" href="/css/app.css?ver=11">
+<link rel="stylesheet" href="/css/slick.min.css?ver=11">
+<link rel="stylesheet" href="/css/font-awesome.min.css?ver=11">
+<link rel="stylesheet" href="/css/pe.icon7.stroke.min.css?ver=11">
+<link rel="stylesheet" href="/css/ndsoft-fonts.css?ver=11">
+<link rel="stylesheet" href="/css/style.min.css?ver=11">
+<link rel="stylesheet" href="/css/design.style.css?ver=11">
+<link rel="stylesheet" href="/menuskin/s_17/menubar.css?ver=11">
+<link rel="stylesheet" href="/adManager/css/adManager.css">
+<link rel="shortcut icon" href="/image/logo/favicon_20181107025509.png">
+<script src="/script/jquery.min.js?ver=11"></script>
+<script src="/script/jquery-ui.min.js?ver=11"></script>
+<script src="/script/slick.min.js?ver=11"></script>
+<script src="/script/jquery.rwdImageMaps.min.js?ver=11"></script>
+<script src="/script/what-input.js?ver=11"></script>
+<script src="/script/foundation.min.js?ver=11"></script>
+<script src="/script/app.js?ver=11"></script>
+<script src="/menuskin/s_17/menubar.js?ver=11"></script>
+<script src="/script/user.style.js?ver=11"></script>
+<script src="/script/bannerpop.js?ver=11"></script>
+<script src="/script/resizePhoto.js?ver=11"></script>
+<script src="/script/onScroll.js?ver=11"></script>
+<script src="/script/floating.banner.js?ver=11"></script>
+<script src="/script/clipboard.min.js?ver=11"></script>
+<script src="/script/common.js?ver=11"></script>
+<script src="/script/mosaic.js?ver=11"></script>
+<script src="/script/jquery.tabslet.min.js?ver=11"></script>
+
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="/css/style.ie9.css?ver=11">
+<script src="/script/html5shiv.min.js?ver=11"></script>
+<![endif]-->
+
+<script type="text/javascript">
+
+	$(document).ready(function(e) {
+		// 이미지맵
+		$('img[usemap]').rwdImageMaps();
+		bannerpop.banner(".banner_event_box");					// 기능성배너 이벤트
+		   bannerpopMulti.bannerLoad();                            // 멀티 기능성 배너 이벤트 
+
+		// 기사뷰 이미지관련
+		
+		// 기사본문 부분 복사하기 저작권 표시
+		$('#article-view-content-div').on('copy', function(e){			
+			var sel = window.getSelection();
+			var copyFooter = "<br/><br/>출처 : 인포스탁데일리(http://www.infostockdaily.co.kr)<br/>";
+			var copyHolder = $('<div>', {html: sel+copyFooter, id:'copy_text', style: {position: 'absolute', left: '-99999px'}});
+			$('body').append(copyHolder);
+			var str = $('#copy_text').html();
+			$('#copy_text').html(str.replace(/(\r\n|\n|\r)/gm, "<br />"));
+			sel.selectAllChildren( copyHolder[0] );
+			window.setTimeout(function() {
+				copyHolder.remove();
+			},0);
+		});
+	});
+
+	// 도메인
+	var SITE_DOMAIN = 'http://www.infostockdaily.co.kr'
+	,___currentTime	= 1746852939;
+
+	// 즐겨찾기 스크립트
+	function bookmark() {
+		window.external.AddFavorite("http://www.infostockdaily.co.kr", "인포스탁데일리")
+	}
+
+</script>
+
+<style type="text/css">
+/* 사이트 기본 색 */
+.user-point,a.user-point,
+.poll-columns .poll-state.going,
+.auto-hr04-2 .auto-nav .slick-slide.slick-current .auto-fontA,.auto-hr05 .auto-nav .slick-slide.slick-current .auto-fontA
+{color:#ed1c24 !important}
+.user-bg,.user-bg:hover,.user-bg:active,.user-bg:focus,li[id*="slick-"].slick-active button[data-role],.tabs .is-active a,
+.checkbox-group > input[type="radio"]:checked + label, .checkbox-group > input[type="checkbox"]:checked + label,
+.radio-group > input[type="radio"]:checked + label, .radio-group > input[type="checkbox"]:checked + label,
+.article-list .article-list-content.type-tm .list-block .links:hover,
+.poll-view .poll-view-state.going,.poll-view .poll-radio input[type="radio"]:checked + label::before,.poll-view .poll-radio input[type="checkbox"]:checked + label::before,
+.auto-dl04 .auto-column::after,.auto-mr01::before,.auto-hp02 a:hover .photo-titbg,.auto-hr04 .auto-nav .slick-slide.slick-current,.auto-hr04-1 .auto-nav .slick-slide.slick-current,
+.nd-switch.user-bg input[type="checkbox"]:checked + label,.nd-switch.user-bg input[type="radio"]:checked + label,
+.nd-switch.user-bg input[type="checkbox"]:checked + label::before,.nd-switch.user-bg input[type="radio"]:checked + label::before,
+.switch-group.user-bg > .nd-switch input[type="checkbox"]:checked + label,.switch-group.user-bg > .nd-switch input[type="radio"]:checked + label,
+.switch-group.user-bg > .nd-switch input[type="checkbox"]:checked + label::before,.switch-group.user-bg > .nd-switch input[type="radio"]:checked + label::before,
+.switch-group.for-ios > .nd-switch.user-bg input[type="checkbox"]:checked + label,.switch-group.for-ios > .nd-switch.user-bg input[type="radio"]:checked + label,
+.switch-group.for-ios > .nd-switch.user-bg input[type="checkbox"]:checked + label::before,.switch-group.for-ios > .nd-switch.user-bg input[type="radio"]:checked + label::before
+{background-color:#ed1c24 !important}
+.user-border,.button.user-bg,
+.poll-view .poll-radio input[type="radio"] + label:hover strong::before,.poll-view .poll-radio input[type="checkbox"] + label:hover strong::before,
+.poll-view .poll-radio input[type="radio"]:checked + label  strong::before,.poll-view .poll-radio input[type="checkbox"]:checked + label  strong::before,
+.auto-pa01 .auto-nav .slick-current .auto-images::before,.auto-hr05-1 .auto-content a:hover .auto-images.line::before,
+.auto-pa02 .auto-nav .slick-current .auto-images::before,.auto-ha08 .auto-columns a:hover .auto-images.line::before,
+.auto-hr05 .auto-nav .slick-slide.slick-current .auto-images.line::before,.auto-hr08 .auto-nav .slick-slide.slick-current .auto-images.line::before,
+.auto-dp03 .auto-columns:hover > a:not(.auto-section)::before,.auto-hr01 .auto-nav .slick-slide.slick-current .auto-images.line::before
+{border-color:#ed1c24 !important}
+.user-border-top {border-top-color:#ed1c24 !important}
+.user-border-bottom {border-bottom-color:#ed1c24 !important}
+.user-border-left {border-left-color:#ed1c24 !important}
+.user-border-right {border-right-color:#ed1c24 !important}
+</style>
+
+<!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "f013db99e5950";
+wcs_do();
+</script>
+<!-- 네이버 웹마스터도구 소유확인 메타태그 -->
+<meta name="naver-site-verification" content="f9a1abf53bc044afc50a95a84240a1b42428f144"/>
+
+
+<!-- Naver Analytics -->
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "1adfe98306b05c";
+if(window.wcs) {
+wcs_do();
+}
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-182903073-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-182903073-1');
+</script>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8816008084578237" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "2128b96fdf5720";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7PXD9TYYK7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7PXD9TYYK7');
+</script></head>
+<body>
+<!--[if lt IE 9]>
+<div id="ie9-guide">
+	<div class="ie9-wrapper border-box">
+		<p class="guide-txt">
+		잠깐! 현재 Internet Explorer 8이하 버전을 이용중이십니다. 최신 브라우저(Browser) 사용을 권장드립니다!
+		</p>
+
+		<div class="guide-right">
+			<dl class="ie9-down nobr">
+				<dt><i class="icon ie-logo">ie</i></dt>
+				<dd>
+					<span>인터넷 익스플로러 11</span>
+					<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank">다운로드</a>
+				</dd>
+			</dl>
+
+			<dl class="ie9-down">
+				<dt><i class="icon cr-logo">chrome</i></dt>
+				<dd>
+					<span>구글 크롬</span>
+					<a href="http://www.google.com/chrome/" target="_blank">다운로드</a>
+				</dd>
+			</dl>
+
+			<dl class="ie9-down">
+				<dt><i class="icon ff-logo">firefox</i></dt>
+				<dd>
+					<span>모질라 파이어폭스</span>
+					<a href="http://www.mozilla.or.kr/" target="_blank">다운로드</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<![endif]-->
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+		<div class="off-canvas user-canvas position-left" id="offCanvas" data-off-canvas>
+			<!-- close //-->
+			<button class="close-button" aria-label="Close menu" type="button" data-close>
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<!--// close -->
+
+			<style type="text/css">
+.user-canvas .user-canvas-navs .menu li > a:hover,.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent[aria-expanded="true"] > a {background:#ed1c24}
+.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent > a::after,.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent[aria-expanded="true"] > a::after {border-top-color:#ed1c24}
+.user-canvas .user-canvas-navs .menu li ul.menu.nested li a:hover {color:#ed1c24}
+</style>
+
+<nav class="user-canvas-navs">
+	<!-- 1차 //-->
+	<ul class="vertical menu" data-multi-open="false" data-accordion-menu>
+		<!--<li><a href="/news/articleList.html?view_type=sm">전체기사</a></li>-->
+			<li>
+		<a href="/news/articleList.html?sc_section_code=S1N17&view_type=sm" target="_top">국내주식</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N9&view_type=sm" target="_top">해외주식</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N1&view_type=sm" target="_top">비상장</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N25&view_type=sm" target="_top">원자재·부동산</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N22&view_type=sm" target="_top">기획연재</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N23&view_type=sm" target="_top">정책·이슈</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N16&view_type=sm" target="_top">AD</a>
+	</li>
+	</ul>
+</nav>		</div>
+		<div class="off-canvas-content" data-off-canvas-content>
+
+			<!-- wrap //-->
+			<div id="user-wrap" class="min-width-1080">
+
+				<!-- header //-->
+				<header id="user-header" class="posi-re float-center">
+
+					<!-- 상단 HTML //-->	
+												<div class="clearfix text-center">
+													</div>
+										<!--// 상단 HTML -->
+					
+					<!-- 메뉴 //-->
+					<script type="text/javascript">
+<!--
+//메뉴 스타일 불러옴 : 메뉴 /script/menubar.js 와 같이 사용되어야 함
+//submenuStyle	: 서브메뉴 펼침 스타일 (horizon : 가로로, vertical : 세로 슬라이딩)
+var exceptIdx = new Array(); //제외할 메뉴 인덱스번호 (0부터 시작:type integer)
+var submenuStyle="vertical";
+//-->
+</script>
+
+<style type="text/css">
+#user-nav .mega-menu li.megaline > a.a-hover {color:#ed1c24}
+#user-gnb .user-search-form button {background-color:#ed1c24}
+</style>
+
+<!-- 메뉴 시작 //-->
+
+<div id="header-gnb">
+
+	<!-- 최상단영역 //-->
+	<div id="user-gnb">
+		<div class="float-center width-1080">
+
+			<!-- banner -->
+			<!-- <div class="user-top-banner">
+				!--190104_인베스팅닷컴제휴--<script type="text/javascript">var ___BANNER = "ban_1546584340234";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/35.js?1546584340234" id="ban_1546584340234"></script>!--//190104_인베스팅닷컴제휴--
+			</div>
+				<div class="user-top-banner">
+				!--상하이저널제휴190201--<script type="text/javascript">var ___BANNER = "ban_1548983746324";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/63.js?1548983746324" id="ban_1548983746324"></script>!--//상하이저널제휴190201--
+			</div>
+							<div class="user-top-banner">
+				!--베한타임즈제휴190513--<script type="text/javascript">var ___BANNER = "ban_1557726607553";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/83.js?1557726607553" id="ban_1557726607553"></script>!--//베한타임즈제휴190513--
+			</div> -->
+
+			<!-- 로그인 //-->
+			<ul class="user-logbox">
+				<li>UPDATED. 2025-05-10 13:52 (토) </li>
+									<li><a href="/member/login.html" target="_top">로그인</a></li>
+					<li><a href="/member/index.html" target="_top">회원가입</a></li>
+								<li><a href="http://www.infostockdaily.co.kr/news/articleList.html?sc_sub_section_code=S2N3&view_type=sm&page=1" onclick="setCookie('view_pc', 'n', 1);" target="_top"><i class="fa fa-mobile fa-fw"></i>모바일웹</a></li>
+			</ul>
+			<!--// 로그인 -->
+
+		</div>
+	</div>
+	<!--// 최상단영역 -->
+</div>
+
+<div id="header-wrapper" class="float-center width-1080">
+
+	<!-- 로고영역 //-->
+	<header id="nav-header">
+		<div id="nav-header-wrap" class="float-center width-1080">
+			<div class="dis-table">
+				<div class="dis-table-cell user-banner">
+					<!--인포스탁미디어그룹_20191002<script type="text/javascript">var ___BANNER = "ban_1570003856560";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/115.js?1570003856560" id="ban_1570003856560"></script>인포스탁미디어그룹_20191002-->
+					<!--인포스탁데일리--<script type="text/javascript">var ___BANNER = "ban_1574042216867";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js_activity/1.js?1574042216867" id="ban_1574042216867"></script><!--//인포스탁데일리-->
+					<!--200629_카카오--<script type="text/javascript">var ___BANNER = "ban_1593395804228";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/155.js?1593395804228" id="ban_1593395804228"></script><!--//200629_카카오-->
+					<!--210106_sk 텔레콤--<script type="text/javascript">var ___BANNER = "ban_1609915201703";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/181.js?1609915201703" id="ban_1609915201703"></script><!--//210106_sk 텔레콤-->
+					<!--두나무--<script type="text/javascript">var ___BANNER = "ban_1623743893190";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/124.js?1623743893190" id="ban_1623743893190"></script><!--//두나무-->
+                    <!--210106_sk 텔레콤--<script type="text/javascript">var ___BANNER = "ban_1628837394913";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/181.js?1628837394913" id="ban_1628837394913"></script><!--//210106_sk 텔레콤-->
+					<!--210929_두나무--<script type="text/javascript">var ___BANNER = "ban_1632903177504";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/231.js?1632903177504" id="ban_1632903177504"></script><!--//210929_두나무-->
+                    <!--211025_카카오--<script type="text/javascript">var ___BANNER = "ban_1635147140895";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/238.js?1635147140895" id="ban_1635147140895"></script><!--//211025_카카오-->
+				</div>
+				<div class="dis-table-cell">
+					<a href="http://www.infostockdaily.co.kr" target="_top"><img src="/image/logo/toplogo_20210129014511.png" alt="인포스탁데일리" /></a>
+					<!-- <a href="http://www.infostockdaily.co.kr" target="_top"><img src="/image/logo/toplogo_10th.png" alt="인포스탁데일리" /></a> -->
+				</div>
+				<div class="dis-table-cell user-banner">
+				<!--kt190930--<script type="text/javascript">var ___BANNER = "ban_1585284839349";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/114.js?1585284839349" id="ban_1585284839349"></script><!--//kt190930-->
+				<!--kt190930--<script type="text/javascript">var ___BANNER = "ban_1569830103440";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/114.js?1569830103440" id="ban_1569830103440"></script><!--//kt190930-->
+				<!--KB금융그룹-1--<script type="text/javascript">var ___BANNER = "ban_1564017370010";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/60.js?1564017370010" id="ban_1564017370010"></script><!--//KB금융그룹-1-->
+				<!--KT190625--<script type="text/javascript">var ___BANNER = "ban_1561428469364";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/94.js?1561428469364" id="ban_1561428469364"></script><!--//KT190625-->
+				<!--181220_KT--<script type="text/javascript">var ___BANNER = "ban_1546585049207";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/24.js?1546585049207" id="ban_1546585049207"></script><!--//181220_KT-->
+					<!--190104_콜대원--<script type="text/javascript">var ___BANNER = "ban_1546586167966";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/36.js?1546586167966" id="ban_1546586167966"></script><!--//190104_콜대원-->
+					<!--LG유플러스_200529--<script type="text/javascript">var ___BANNER = "ban_1590715422631";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/152.js?1590715422631" id="ban_1590715422631"></script><!--//LG유플러스_200529-->
+					<!--lg_20200831--><!-- <script type="text/javascript">var ___BANNER = "ban_1598838078903";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/168.js?1598838078903" id="ban_1598838078903"></script> --><!--//lg_20200831-->
+					<!--201202_e편한세상--<script type="text/javascript">var ___BANNER = "ban_1607000397961";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/176.js?1607000397961" id="ban_1607000397961"></script><!--//201202_e편한세상-->
+					<!--e편한세상_가평_201221--<script type="text/javascript">var ___BANNER = "ban_1608532059553";</script><script type="text/javascript" charset="utf-8" src="http://www.infostockdaily.co.kr/bannerpop/uploads/js/179.js?1608532059553" id="ban_1608532059553"></script><!--//e편한세상_가평_201221-->
+					<!--210630_dlenc--<script type="text/javascript">var ___BANNER = "ban_1625035836360";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/207.js?1625035836360" id="ban_1625035836360"></script><!--//210630_dlenc-->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--// 로고영역 -->
+
+	<!-- 메뉴바 //-->
+	<nav id="user-nav">
+		<div id="user-nav-wrapper" class="float-center width-1080">
+			<!-- 전체 -->
+			<button type="button" class="all-section" data-toggle="offCanvas"><i class="fa fa-bars fa-fw"></i></button>
+
+			<!-- 섹션 //-->
+			<ul id="mega-menu" class="mega-menu">
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N17&view_type=sm" target="_top">국내주식</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N9&view_type=sm" target="_top">해외주식</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N1&view_type=sm" target="_top">비상장</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N25&view_type=sm" target="_top">원자재·부동산</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N22&view_type=sm" target="_top">기획연재</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+									<li class="megaline"><a href="/news/articleList.html?sc_section_code=S1N23&view_type=sm" target="_top">정책·이슈</a>
+						<ul class="sub-menu-vertical">
+													</ul>
+					</li>
+							</ul>
+			<!--// 섹션 -->
+
+			<!-- 검색 //-->
+			<div class="user-search">
+				<fieldset class="user-search-form">
+					<form name="head-search" method="post" action="/news/articleList.html">
+						<input type="hidden" name="sc_area" value="A">
+						<input type="hidden" name="view_type" value="sm">
+						<label class="show-for-sr" for="search">기사검색</label>
+						<input type="text" name="sc_word" id="search" onkeydown="if(event.keyCode==13){if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');return false;}}" placeholder="기사 검색" title="기사검색">
+						<button type="button" title="기사검색" onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}"><i class="s7-search"></i><span class="show-for-sr">Search</span></button>
+					</form>
+				</fieldset>
+			</div>
+			<!--// 검색 -->
+
+		</div>
+	</nav>
+	<!--// 메뉴바 -->
+</div>
+<!--// 메뉴 끝 -->
+					<!--// 메뉴 -->
+
+				</header>
+				<!--// header -->
+
+								<!-- container //-->
+				<section id="user-container" class="posi-re text-left auto-pady-25 float-center width-1080">
+					<!-- layer popup position  -->
+					<div id="layer-popups" class="float-center width-1080"></div>
+					
+					<!-- 플로팅 좌우 HTML //-->
+					<div class="posi-re float-center width-1080"><div id="floating_banner_left" class="view-aside left-wing" data-scroll="y" data-top-margin="5" data-duration="300" style="left:-215px;">
+<!-- <div style="width:160px; height:600px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8816008084578237"
+     crossorigin="anonymous"></script> -->
+<!-- 사이드 바 -->
+<!-- <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8816008084578237"
+     data-ad-slot="4866882165"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div> --></div>
+<div id="floating_banner_right" class="view-aside right-wing" data-scroll="y" data-top-margin="5" data-duration="300">
+<!-- <div style="width:160px; height:600px;">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8816008084578237"
+     crossorigin="anonymous"></script> -->
+<!-- 사이드바 2 -->
+<!-- <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8816008084578237"
+     data-ad-slot="3809785517"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div> --></div>
+</div>					<!--// 플로팅 좌우 HTML -->
+
+					<!-- 광고관리용 날개배너 //-->
+                    <div class="posi-re float-center width-1080" id="wingBanner">
+                        <div class="wing-banner-left">
+                                                    </div>
+                        <div class="wing-banner-right">
+                                                    </div>
+                    </div>
+                    <!--// 광고관리용 날개배너 -->
+<div class="float-center max-width-1080">
+
+	<!-- 편집패널 //-->
+	<div class="clearfix">
+
+	</div>
+	<!--// 편집패널 -->
+
+	
+
+	<!-- article view wrapper //-->
+	<div class="user-content">
+
+		<!-- 기사본문 내용 //-->
+		<section class="user-snb">								
+			<!-- contents //-->
+			<article class="article-veiw-body">
+				<!-- 편집패널 //-->
+				<div class="clearfix">
+
+				</div>
+				<!--// 편집패널 -->
+				
+				
+<!-- 기사리스트 //-->
+<div class="article-list">
+	<!-- header //-->
+	<header class="article-list-header">
+		<!-- title -->
+		<div class="float-left article-list-header-title"><strong>기사</strong> <small class="text-muted">(0건)</small></div>
+
+		<div class="float-right button-group small">
+			<a href="/news/articleList.html?page=1&total=0&sc_section_code=&sc_sub_section_code=S2N3&sc_serial_code=&sc_area=&sc_level=&sc_article_type=&sc_view_level=&sc_sdate=&sc_edate=&sc_serial_number=&sc_word=" class="button nd-white" data-tooltip title="리스트형"><i class="fa fa-bars fa-fw"></i><span class="sr-only">리스트형</span></a>
+			<a href="/news/articleList.html?page=1&total=0&sc_section_code=&sc_sub_section_code=S2N3&sc_serial_code=&sc_area=&sc_level=&sc_article_type=&sc_view_level=&sc_sdate=&sc_edate=&sc_serial_number=&sc_word=&view_type=sm" class="button user-bg" data-tooltip title="웹진형"><i class="fa fa-list fa-fw"></i><span class="sr-only">웹진형</span></a>
+			<a href="/news/articleList.html?page=1&total=0&sc_section_code=&sc_sub_section_code=S2N3&sc_serial_code=&sc_area=&sc_level=&sc_article_type=&sc_view_level=&sc_sdate=&sc_edate=&sc_serial_number=&sc_word=&view_type=tm" class="button nd-white" data-tooltip title="타일형"><i class="fa fa-th-large fa-fw"></i><span class="sr-only">타일형</span></a>
+		</div>
+	</header>
+	<!--// header -->
+
+	<!-- 웹진형 //-->
+<section class="article-list-content type-sm text-left">
+
+	
+</section>
+<!--// 웹진형 -->
+	<hr>
+
+	
+</div>
+<!--// 기사리스트 예시 -->
+				<!-- 편집패널 //-->
+				<div class="clearfix">
+
+				</div>
+				<!--// 편집패널 -->
+			</article>
+			<!--// contents -->
+
+		</section>
+		<!--// 기사본문 내용 -->
+
+		<!-- 기사본문 우측 //-->
+		<aside class="user-aside">
+<article class="box-skin design-7">
+<header class="header"><strong>인기기사</strong></header>
+<section class="content"><div class="auto-article auto-db01">
+<ul><li class="clearfix"><div class="number count1 user-bg">1</div><a href="/news/articleView.html?idxno=207974" target="_top" class="size-14 line-height-4-x auto-fontA onload">[0509마감체크] 미·중 관세협상을 앞둔 관망세... 국내증시 하락 마감</a></li>
+<li class="clearfix auto-martop-8"><div class="number count2 user-bg">2</div><a href="/news/articleView.html?idxno=207973" target="_top" class="size-14 line-height-4-x auto-fontA onload">디 웨이브 퀀텀 "역사적 분기"…디 웨이브, 2025년 매출 1.7억 달러 도전"</a></li>
+<li class="clearfix auto-martop-8"><div class="number count3 user-bg">3</div><a href="/news/articleView.html?idxno=207971" target="_top" class="size-14 line-height-4-x auto-fontA onload">월트디즈니, 하반기 이익 모멘텀 기반으로 지속 성장 전망-신한</a></li>
+<li class="clearfix auto-martop-8"><div class="number count4 default-bg">4</div><a href="/news/articleView.html?idxno=207975" target="_top" class="size-14 line-height-4-x auto-fontA onload">'범블' 주가, 역설적 상승…매출 감소에도 전략 변화 기대감</a></li>
+<li class="clearfix auto-martop-8"><div class="number count5 default-bg">5</div><a href="/news/articleView.html?idxno=207976" target="_top" class="size-14 line-height-4-x auto-fontA onload">실적 발표 후 주가 15.92% 상승…'파파존스' 왜</a></li>
+<li class="clearfix auto-martop-8"><div class="number count6 default-bg">6</div><a href="/news/articleView.html?idxno=207931" target="_top" class="size-14 line-height-4-x auto-fontA onload">[0508마감체크] 국내증시, 외국인 순매수에 상승... 3거래일 연속 상승</a></li>
+<li class="clearfix auto-martop-8"><div class="number count7 default-bg">7</div><a href="/news/articleView.html?idxno=207900" target="_top" class="size-14 line-height-4-x auto-fontA onload">[IPO 걸림돌②] SK엔무브, 그룹 리밸런싱 희생양되나…정보부족에 투자자 '답답'</a></li>
+<li class="clearfix auto-martop-8"><div class="number count8 default-bg">8</div><a href="/news/articleView.html?idxno=207929" target="_top" class="size-14 line-height-4-x auto-fontA onload">하나증권, 서울맹학교 아이들과 세번째 행복한 봄나들이</a></li>
+<li class="clearfix auto-martop-8"><div class="number count9 default-bg">9</div><a href="/news/articleView.html?idxno=207928" target="_top" class="size-14 line-height-4-x auto-fontA onload">삼성증권, 전국 동시투자 설명회 '채권 인사이트 2025' 개최</a></li>
+<li class="clearfix auto-martop-8"><div class="number count10 default-bg">10</div><a href="/news/articleView.html?idxno=207883" target="_top" class="size-14 line-height-4-x auto-fontA onload">스팩스페이스, 3D 공간분석 설루션으로 부동산 분야 AI 프로젝트 본격 추진</a></li>
+</ul>
+</div></section>
+</article><!--블로그 배너 2--><script type="text/javascript">var ___BANNER = "ban_1737088969";</script><script type="text/javascript" charset="utf-8" src="/bannerpop/uploads/js/445.js?1737088969" id="ban_1737088969"></script><!--//블로그 배너 2--><div class="box-margins height-35"></div><article class="box-skin design-7">
+<header class="header"><strong>최신기사</strong></header>
+<section class="content"><div class="auto-article auto-dl04">
+<ul><li class="auto-column">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207978" target="_top" class="line-height-3-2x auto-fontA onload">후강통 선강통 상승률 상위 종목</a></div><a href="/news/articleView.html?idxno=207978" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207978_207907_4831_v150.jpg)">
+				<span class="show-for-sr">후강통 선강통 상승률 상위 종목</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207977" target="_top" class="line-height-3-2x auto-fontA onload">중국 본토 및 홍콩 증시 거래대금 상위 종목</a></div><a href="/news/articleView.html?idxno=207977" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207977_207902_4325_v150.jpg)">
+				<span class="show-for-sr">중국 본토 및 홍콩 증시 거래대금 상위 종목</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207976" target="_top" class="line-height-3-2x auto-fontA onload">실적 발표 후 주가 15.92% 상승…'파파존스' 왜</a></div><a href="/news/articleView.html?idxno=207976" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207976_207901_941_v150.jpg)">
+				<span class="show-for-sr">실적 발표 후 주가 15.92% 상승…'파파존스' 왜</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207975" target="_top" class="line-height-3-2x auto-fontA onload">'범블' 주가, 역설적 상승…매출 감소에도 전략 변화 기대감</a></div><a href="/news/articleView.html?idxno=207975" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207975_207899_5040_v150.jpg)">
+				<span class="show-for-sr">'범블' 주가, 역설적 상승…매출 감소에도 전략 변화 기대감</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207973" target="_top" class="line-height-3-2x auto-fontA onload">디 웨이브 퀀텀 "역사적 분기"…디 웨이브, 2025년 매출 1.7억 달러 도전"</a></div><a href="/news/articleView.html?idxno=207973" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207973_207897_3322_v150.jpg)">
+				<span class="show-for-sr">디 웨이브 퀀텀 "역사적 분기"…디 웨이브, 2025년 매출 1.7억 달러 도전"</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207974" target="_top" class="line-height-3-2x auto-fontA onload">[0509마감체크] 미·중 관세협상을 앞둔 관망세... 국내증시 하락 마감</a></div><a href="/news/articleView.html?idxno=207974" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207974_207893_2040_v150.jpg)">
+				<span class="show-for-sr">[0509마감체크] 미·중 관세협상을 앞둔 관망세... 국내증시 하락 마감</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207971" target="_top" class="line-height-3-2x auto-fontA onload">월트디즈니, 하반기 이익 모멘텀 기반으로 지속 성장 전망-신한</a></div><a href="/news/articleView.html?idxno=207971" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207971_207887_5239_v150.jpg)">
+				<span class="show-for-sr">월트디즈니, 하반기 이익 모멘텀 기반으로 지속 성장 전망-신한</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207969" target="_top" class="line-height-3-2x auto-fontA onload">노보 노디스크, 위고비 경구제 승인 여부 등 하반기 확인 후 진입-신한</a></div><a href="/news/articleView.html?idxno=207969" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207969_207884_46_v150.jpg)">
+				<span class="show-for-sr">노보 노디스크, 위고비 경구제 승인 여부 등 하반기 확인 후 진입-신한</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207970" target="_top" class="line-height-3-2x auto-fontA onload">LS, 부탄 신도시 전력 인프라 사업 추진…"현지서 신사업 기회 모색"</a></div><a href="/news/articleView.html?idxno=207970" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207970_207886_1934_v150.jpg)">
+				<span class="show-for-sr">LS, 부탄 신도시 전력 인프라 사업 추진…"현지서 신사업 기회 모색"</span>
+			</a></li>
+<li class="auto-column auto-padtop-25">
+		<div class="size-14 auto-padbtm-8"><a href="/news/articleView.html?idxno=207968" target="_top" class="line-height-3-2x auto-fontA onload">금호석화, 1분기 영업익 1206억원…전년比 53.4%↑</a></div><a href="/news/articleView.html?idxno=207968" target="_top" class="auto-images cover line max-width-165 height-100" style="background-image:url(/news/thumbnail/202505/207968_207883_030_v150.jpg)">
+				<span class="show-for-sr">금호석화, 1분기 영업익 1206억원…전년比 53.4%↑</span>
+			</a></li>
+</ul>
+</div></section>
+</article><div class="box-margins height-35"></div><!-- AD174193512964 -->
+<!--PC 기사뷰 본문 하단 (20250314)//-->
+
+<style>#AD174193512964.ad-template { margin:auto; position:relative; display:block; clear:both; z-index:1; }
+#AD174193512964.ad-template .col { text-align:center; }
+#AD174193512964.ad-template .col .ad-view { position:relative; }</style>
+<!-- AD Manager | AD174193512964 //-->
+<div id="AD174193512964" class="ad-template">
+	<div class="col"><div class="ad-view"><!-- Begin Dable 본문하단_그리드6 / For inquiries, visit http://dable.io -->
+<div id="dablewidget_QXeda0Zl" data-widget_id="QXeda0Zl">
+<script>
+(function(d,a,b,l,e,r) {
+if(d[b]&&d[b].q)return;d[b]=function(){(d[b].q=d[b].q||[]).push(arguments)};e=a.createElement(l);
+e.async=1;e.charset='utf-8';e.src='//static.dable.io/dist/plugin.min.js';
+r=a.getElementsByTagName(l)[0];r.parentNode.insertBefore(e,r);
+
+})(window,document,'dable','script');
+dable('setService', 'infostockdaily.co.kr');
+dable('sendLogOnce');
+dable('renderWidget', 'dablewidget_QXeda0Zl');
+</script>
+</div>
+<!-- End 본문하단_그리드6 / For inquiries, visit http://dable.io --></div></div>
+</div>
+<!--// AD Manager | AD174193512964 -->		</aside>
+		<!--// 기사본문 우측 -->
+	</div>
+	<!--// article view wrapper -->
+
+	<!-- 편집패널 //-->
+	<div class="clearfix">
+
+	</div>
+	<!--// 편집패널 -->
+
+</div>
+				</section>
+				<!--// container -->
+
+				
+				<!-- footer //-->
+				<footer id="user-footer" class="float-center custom-style">	
+					<div class="float-center width-1080">
+						<div class="wrapper-inner">
+						
+							<div class="footer-menu">
+								<!-- logo //-->
+								<!--<div class="footer-columns user-logo"><img src="/image/logo/downlogo_20190104125926.png" alt="인포스탁데일리" /></div>-->
+								<div class="footer-columns user-logo"><img src="/image/logo/watermark_20190104011518.png" alt="인포스탁데일리" /></div>
+								<!--// logo -->
+
+								<!-- nav //-->
+								<nav class="dis-inblock float-center user-nav">
+									<a href="/com/com-1.html" class="deco-none"><strong>매체소개</strong></a>
+									<!--<a href="http://www.isdcpr.co.kr/" class="deco-none"><strong>ISD기업정책연구원</strong></a>
+									 <a href="/com/com-6.html" class="deco-none"><strong>부설 연구소</strong></a> -->
+									<a href="/com/com-5.html" class="deco-none"><strong>연혁</strong></a>
+									<a href="/com/jb.html" class="deco-none"><strong>기사제보</strong></a>
+									<a href="/com/com-2.html" class="deco-none"><strong>인재채용</strong></a>
+									<a href="/com/ad.html" class="deco-none"><strong>광고문의</strong></a>
+									<a href="/com/bp.html" class="deco-none"><strong>불편신고</strong></a>
+									<a href="/com/privacy.html" class="deco-none"><strong>개인정보취급방침</strong></a>
+									<a href="/com/youthpolicy.html" class="deco-none"><strong>청소년보호정책</strong></a>
+									<a href="/com/emailno.html" class="deco-none"><strong>이메일무단수집거부</strong></a>
+									<a href="/rssIndex.html" class="deco-none"><strong>RSS</strong></a>
+								</nav>
+								<!--// nav  -->
+							</div>
+
+							<address class="user-address">
+								<ul class="no-bullet">
+									<!--<li class="bars">본사 : 서울특별시 강남구 봉은사로 129 거평타운 1713호 (서울특별시 강남구 논현동 203-1)</li>-->
+									<!--<li class="bars">주소 : 서울특별시 강남구 봉은사로 129 거평타운 1801호</li>
+									<li class="bars">주소 : 서울특별시 동대문구 장안동 423-2(도로명: 장한로5길 17) 두원빌딩 301호, 401호 (우)02636</li>-->
+									
+									<li class="bars">주소 : 서울특별시 강남구 봉은사로 129 거평타운 1713호 (서울특별시 강남구 논현동 203-1) (우)06121</li>
+									<li >대표전화 : 02-3447-2114 / 02-1522-1730</li>
+																		<!--<li class="bars clear">법인명 : 인포스탁데일리(주)</li>-->
+									<!--<li class="bars clear">(주)유스넷코리아 : 경기도 성남시 분당구 정자일로 1 코오롱트리폴리스 C동 3203호</li>
+									<li >대표전화 : 1522-1730</li>-->
+
+									<li class="bars clear">제호 : 인포스탁데일리</li>
+									<li class="bars">등록번호 : 서울 아 53145</li>
+									<li class="bars">등록일 : 2014-06-23</li>
+									<li class="bars">발행일 : 2014-06-23</li>
+									<li class="bars ">발행인 : 안호현</li>
+									<li class="bars">편집인 : 권용호</li>
+									<li>청소년보호책임자 : 안호현</li>
+									<li class="clear">인포스탁데일리 모든 콘텐츠(영상,기사, 사진)는 저작권법의 보호를 받은바, 무단 전재와 복사, 배포 등을 금합니다.</li>
+									<li class="clear">C<a href="http://www.infostockdaily.co.kr/admin/adminLoginForm.html" class="deco-none">o</a>pyright © 2025 인포스탁데일리. <a href="http://www.infostockdaily.co.kr/news/articleList.html?sc_sub_section_code=S2N3&view_type=sm&page=1" onclick="setCookie('view_pc', 'n', 1);">All</a> rights reserved. mail to <a href="mailto:vicahh@infostock.co.kr" class="deco-none">vicahh@infostock.co.kr</a></li>
+								</ul>
+								
+
+								<!--한국인터넷신문협회-->
+								<a href="https://www.kina.or.kr/" target="blank" class="kina"><img src="/image/kina.png" alt="한국인터넷신문협회" /></a>
+								<a href="https://www.inc.or.kr/" target="blank" class="ins2"><img src="/image/ins2.png" alt="한국인터넷신문협회" /></a>
+								<!-- 인터넷신문위원회
+								<a href="https://www.inc.or.kr/" target="_blank" class="ins"><img src="http://www.infostockdaily.co.kr/bannerpop/uploads/image/1546934406721904931.png" alt="인터넷신문위원회" /></a> -->
+								
+								<a href="http://www.ndsoft.co.kr/" target="_blank" class="ndsoft"><img src="/image/ndsoft.gif" alt="ND소프트" /></a>						
+							</address>		
+
+						</div>
+					</div>
+				</footer>
+				<!--// footer -->
+
+				<!-- 하단 HTML //-->	
+										<div class="clearfix text-center">
+											</div>
+								<!--// 하단 HTML -->
+
+				<!-- back to the top //-->
+				<button type="button" id="back-to-top" class="back-to-top" title="위로"><i class="s7-angle-up"><span class="show-for-sr">위로</span></i></button>
+				<!--// back to the top -->
+
+				
+			</div>
+			<!--// wrap -->
+
+		</div>
+	</div>
+</div>
+
+<script>
+// Popup Json
+var ___popup = [];
+bannerpop.popup();
+</script>
+
+<ins name="deepdive" data-wid="IFS018001"></ins>
+
+<script type="text/javascript">
+<!--
+// back to the top		
+$(document).scroll(function(){
+	var sDocumentHeight = $(document).height() - $(window).height();
+	if($(document).scrollTop() > 0){	
+		$('#back-to-top').fadeIn();
+	}else{
+		$('#back-to-top').fadeOut();
+	}
+});
+
+$('#back-to-top').click(function(){
+	$('html, body').animate( {scrollTop:0}, 100);
+});
+//-->
+</script>
+
+
+<!-- 구글 애드센스 S -->
+<script src="/adManager/js/lab.js"></script>
+<script>
+jQuery(function($) {
+	setTimeout(function() {
+		$LAB
+		.script("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+		.wait(function () {
+			var adn = jQuery('.adsbygoogle').length;
+		  console.log(adn);
+			if (adn > 0) {
+				for (var i = 0; i < adn; i++) {
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				}
+			}
+		});
+	}, 1000);
+});
+</script>
+<!-- 구글 애드센스 E -->
+
+
+<link rel="stylesheet" href="/adManager/css/adManager.css"><!-- 날개 광고 노출시 로딩 관련 깜빡임이 심할경우 top.html head 측으로 이동 -->
+<script type="text/javascript" src="/library/isND/"></script>
+<script>
+$(document).ready(function(){
+	// 닫기 버튼 자동 노출
+	$('.ad-template.ad-close .ad-view').each(function(){
+		$(this).append('<div class="ad-close-btn"><i class="fa fa-close"></i></div>');
+	})
+
+	// 닫기 버튼 클릭 시 이벤트
+	$('body').on('click', '.ad-close-btn', function(){
+		$(this).closest('.ad-view').slideUp();
+	})
+
+	
+	if(____is_nd) {
+
+				// ND IP만 광고 ID 보이기
+		$('.ad-template').each(function(){
+			$(this).append('<div class="ad-code-id">'+$(this).attr('id')+'</div>');
+		})
+		
+				// 광고 ID 자동 숨김 설정 시
+		$('.ad-code-id').hide();
+
+		$('.ad-template').mouseenter(function(){
+			$(this).find('.ad-code-id').show();
+		}).mouseleave(function(){
+			$(this).find('.ad-code-id').hide();
+		})
+		
+
+		
+		// 소스 코드 복사 기능 추가 :: 2019-11-29
+		$('.ad-template .ad-code-id').on('click', function(){
+			var adManagerTempElem = document.createElement('textarea');
+			adManagerTempElem.value = $(this).closest('.ad-template').html().trim();
+			document.body.appendChild(adManagerTempElem);
+
+			adManagerTempElem.select();
+			document.execCommand("copy");
+			document.body.removeChild(adManagerTempElem);
+
+			alert('[AD Manager]\n'+$(this).text()+' 소스 복사 완료!');
+		})
+	}
+
+	})
+
+
+
+/* ****************************************** */
+/* 날개배너 스크립트  */
+/* ****************************************** */
+$('#wingBanner .wing-banner-left .wing-banner').each(function(){
+	if( $(this).data('scroll') == 'y' ) $(this).addClass('scroll-on');
+});
+
+$(window).scroll(function() {
+	if( $('#wingBanner .wing-banner').length > 0 ){											// 날개배너가 있으면 작동
+
+		var scrollingHeight_L = nonScrollingHeight_L = scrollingHeight_R = nonScrollingHeight_R = 0;
+
+		$('#wingBanner .wing-banner').each(function(idx){
+			var $_this		= $(this),														// 날개배너
+				scroll		= $_this.data('scroll'),										// 날개배너 스크롤 여부
+				topMargin	= $_this.data('top-margin'),									// 날개배너 상단여백
+				downMargin	= $_this.data('down-margin'),									// 날개배너 하단여백
+				duration	= $_this.data('duration'),										// 날개배너 스크롤 속도
+				direction	= $_this.data('direction'),										// 날개배너 위치
+				// bannerTop	= $_this.offset().top,											// 날개배너 상단 위치 (가변)
+				bannderHeight = $_this.outerHeight();										// 날개배너 높이 (고정)
+
+			var fixWingBannertop	= $('#wingBanner').offset().top;						// 날개배너 상단 위치 (고정)
+
+			var articleTitleHeight	= $('#article-header-title.scroll').height();			// 날개배너 스크롤 시 상단 타이틀 높이 (기사 본문 시)
+			if(!articleTitleHeight) articleTitleHeight = 0;
+
+			var $_userFooter		= $('#user-footer'),									// 사이트 Footer
+				userFooterHeight	= $_userFooter.outerHeight();							// 사이트 Footer 높이 (고정)
+
+			var winScrollTop		= $(window).scrollTop(),								// 윈도우 스크롤 위치 (가변)
+				winHeight			= $(window).height(),									// 윈도우 높이
+				docHeight			= $(document).height();									// 페이지 높이
+
+			switch (direction) {															// 날개 배너 위치 별
+				case 'left':
+					if(scroll == 'y') scrollingHeight_L += bannderHeight;					// 순서대로 노출되는 날개배너 중 스크롤 하는 배너의 높이값 (좌)
+					else nonScrollingHeight_L += bannderHeight;								// 순서대로 노출되는 날개배너 중 스크롤 하지 않는 배너의 높이값 (좌)
+					break;
+
+				case 'right':
+					if(scroll == 'y') scrollingHeight_R += bannderHeight;					// 순서대로 노출되는 날개배너 중 스크롤 하는 배너의 높이값 (우)
+					else nonScrollingHeight_R += bannderHeight;								// 순서대로 노출되는 날개배너 중 스크롤 하지 않는 배너의 높이값 (우)
+					break;
+			}
+
+			if(scroll == 'y') {																// 스크롤 배너만 움직임 처리
+				var bannerAllHeight = siteAllHeight = 0;
+
+				// 좌우측 각각 배너 스크롤 처리를 위해 나눠서 처리
+				if(direction == 'left'){																			// 좌측 날개
+					var wingBnTop_L = winScrollTop - fixWingBannertop + topMargin - nonScrollingHeight_L;			// 날개배너 스크롤 위치 (가변)
+
+					if( articleTitleHeight ) wingBnTop_L += articleTitleHeight;										// 기사본문 시 상단 스크롤 타이틀이 나타나면 스크롤 타이틀 만큼 날개배너 위치 조정
+
+					if((fixWingBannertop + nonScrollingHeight_L) < winScrollTop) {
+
+						bannerAllHeight = articleTitleHeight + scrollingHeight_L + 1;								// 상단 타이틀 + 스크롤배너의 총 높이
+						siteAllHeight = winHeight - userFooterHeight + downMargin;									// 윈도우 높이 + 사이트 Footer 높이
+
+						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
+							wingBnTop_L -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_L + topMargin + articleTitleHeight)));
+							$('#wingBanner .wing-banner-left .wing-banner.scroll-on').animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+						}
+					} else {
+						wingBnTop_L = 0;																			// 최상단 처리
+					}
+					$_this.animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});
+
+				} else {																							// 우측 날개
+
+					var wingBnTop_R = winScrollTop - fixWingBannertop + topMargin - nonScrollingHeight_R;			// 날개배너 스크롤 위치 (가변)
+
+					if( articleTitleHeight ) wingBnTop_R += articleTitleHeight;										// 기사본문 시 상단 스크롤 타이틀이 나타나면 스크롤 타이틀 만큼 날개배너 위치 조정
+
+					if((fixWingBannertop + nonScrollingHeight_R) < winScrollTop) {
+
+						bannerAllHeight = articleTitleHeight + scrollingHeight_R + 1;								// 상단 타이틀 + 스크롤배너의 총 높이
+						siteAllHeight = winHeight - userFooterHeight + downMargin;									// 윈도우 높이 + 사이트 Footer 높이
+
+						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
+							wingBnTop_R -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_R + topMargin + articleTitleHeight)));
+							$('#wingBanner .wing-banner-right .wing-banner.scroll-on').animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+						}
+					} else {
+						wingBnTop_R = 0;																			// 최상단 처리
+					}
+					$_this.animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});
+				}
+			}
+		});
+	}
+
+});
+</script>
+</body>
+</html>
